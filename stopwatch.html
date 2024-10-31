@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Stopwatch</title>
+  <!-- Include JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Basic CSS */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #time-display {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    #date-picker {
+      font-size: 18px;
+      padding: 5px;
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+<div id="time-display">00:00:00</div>
+<input type="date" id="date-picker">
+<div>
+  <button id="start-btn">Start</button>
+  <button id="stop-btn">Stop</button>
+  <button id="reset-btn">Reset</button>
+</div>
+<script src="stopwatch.js"></script>
+</body>
+</html>

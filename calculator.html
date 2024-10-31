@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator Page</title>
+  <!-- Include JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    /* Basic CSS */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .input-field {
+      margin-bottom: 15px;
+    }
+    .input-field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .input-field input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    #result {
+      background-color: #f0f0f0;
+    }
+    .error-message {
+      color: red;
+      margin-top: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h1>Calculator Page</h1>
+<h2>Welcome, <span id="username-display"></span>!</h2>
+<div class="input-field">
+  <label for="number1">Number 1:</label>
+  <input type="text" id="number1">
+  <div class="error-message" id="number1-error"></div>
+</div>
+<div class="input-field">
+  <label for="number2">Number 2:</label>
+  <input type="text" id="number2">
+  <div class="error-message" id="number2-error"></div>
+</div>
+<div>
+  <button id="add-btn">Add</button>
+  <button id="subtract-btn">Subtract</button>
+  <button id="multiply-btn">Multiply</button>
+  <button id="divide-btn">Divide</button>
+</div>
+<div class="input-field">
+  <label for="result">Result:</label>
+  <input type="text" id="result" readonly>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
